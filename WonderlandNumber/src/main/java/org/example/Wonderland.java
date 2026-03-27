@@ -1,8 +1,8 @@
 package org.example;
 
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.List;*/
 
 public class Wonderland {
 
@@ -11,7 +11,7 @@ public class Wonderland {
     private static final int MULTIPLIER_START = 2;
     private static final int MULTIPLIER_END = 6;
 
-    public static List<Integer> generateSixDigitNumbers() {
+/*    public static List<Integer> generateSixDigitNumbers() {
         List<Integer> numbers = new ArrayList<>(MAX_SIX_DIGIT - MIN_SIX_DIGIT + 1);
 
         for (int i = MIN_SIX_DIGIT; i <= MAX_SIX_DIGIT; i++) {
@@ -19,7 +19,7 @@ public class Wonderland {
         }
 
         return numbers;
-    }
+    }*/
 
     public static boolean isWonderlandNumber(int n) {
         int[] original = getDigitCount(n);
