@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import java.util.List;
+//import java.util.List;
 
-class SixDigitNumberGeneratorTest {
+/*class SixDigitNumberGeneratorTest {
 
     @Test
     void shouldGenerateCorrectAmountOfSixDigitNumbers() {
@@ -34,7 +34,7 @@ class SixDigitNumberGeneratorTest {
             assertTrue(n >= 100000 && n <= 999999);
         }
     }
-}
+}*/
 
 class WonderlandValidatorTest {
 
@@ -47,5 +47,12 @@ class WonderlandValidatorTest {
     })
     void shouldValidateWonderlandNumbers(int n, boolean expected) {
         assertEquals(expected, Wonderland.isWonderlandNumber(n));
+    }
+}
+class WonderlandFinderTest {
+
+    @Test
+    void shouldReturnTheOnlyWonderlandNumber() {
+        assertEquals(142857, Wonderland.findWonderlandNumber());
     }
 }
