@@ -1,68 +1,68 @@
 # Wonderland Number (5 digits)
 
-## Descripción
+## Description
 
-Wonderland Number es un kata de programación basado en un problema de lógica numérica y restricciones sobre dígitos.
+Wonderland Number is a programming kata based on a numerical logic problem involving constraints on digits.
 
-En esta variante, el objetivo es encontrar un número de **5 cifras** que cumpla una propiedad muy concreta: al multiplicarlo por distintos factores, el resultado debe contener exactamente los mismos dígitos, sin repeticiones dentro del número ni colisiones entre dígitos en los resultados.
+In this variant, the goal is to find a **5-digit number** that satisfies a very specific property: when multiplied by certain factors, the results must contain exactly the same digits, with no repeated digits within the number itself and no digit collisions across the resulting products.
 
-## Problema
+## Problem
 
-Se busca un número de 5 dígitos que cumpla las siguientes condiciones:
+The task is to find a 5-digit number that satisfies the following conditions:
 
-- Es un número de exactamente 5 cifras.
-- Todos sus dígitos son distintos entre sí.
-- Al multiplicarlo por ciertos números (según el enunciado del kata), los resultados obtenidos deben estar formados por dígitos todos diferentes.
-- Además, los dígitos resultantes deben seguir cumpliendo la propiedad de no repetirse dentro del propio número.
+- It is a number with exactly 5 digits.
+- All digits are unique.
+- When multiplied by certain numbers (as defined in the kata statement), the resulting products must be composed of digits that are all different.
+- Additionally, the digits in each result must also respect the rule of no repetition within the number.
 
-## Idea del ejercicio
+## Idea of the Exercise
 
-El problema se basa en encontrar un número “especial” que mantiene una estructura de dígitos única bajo multiplicaciones, lo que implica fuertes restricciones combinatorias.
+The problem is based on finding a “special” number that maintains a unique digit structure under multiplication, which implies strong combinatorial constraints.
 
-No se trata de un cálculo directo, sino de una búsqueda con validación de condiciones sobre los dígitos.
+It is not a direct calculation, but rather a search process with validation of digit-based conditions.
 
-## Conceptos trabajados
+## Concepts Covered
 
-- Programación en Java
-- Búsqueda exhaustiva (brute force)
-- Manipulación de dígitos
-- Validación de unicidad
-- Conjuntos (`Set`)
-- Optimización de búsqueda
-- Lógica combinatoria
+- Java programming
+- Brute force search
+- Digit manipulation
+- Uniqueness validation
+- Sets
+- Search optimization
+- Combinatorial logic
 
-## Estrategia de solución
+## Solution Strategy
 
-Una aproximación típica consiste en:
+A typical approach consists of:
 
-1. Iterar sobre todos los números de 5 cifras.
-2. Filtrar aquellos con dígitos repetidos.
-3. Multiplicar el número por los factores indicados en el ejercicio.
-4. Verificar que:
-   - No hay dígitos repetidos en cada resultado.
-   - Los dígitos cumplen las restricciones globales del problema.
-5. Guardar o devolver el número que cumple todas las condiciones.
+1. Iterating over all 5-digit numbers.
+2. Filtering out numbers with repeated digits.
+3. Multiplying the number by the given factors in the exercise.
+4. Checking that:
+   - There are no repeated digits in each result.
+   - The digits satisfy the global constraints of the problem.
+5. Storing or returning the number that satisfies all conditions.
 
-## Ejemplo de validación
+## Validation Example
 
-Para un número candidato `ABCDE`:
+For a candidate number `ABCDE`:
 
 ```text
-ABCDE × k → resultado válido si:
-- todos los dígitos del resultado son distintos
-- no hay repeticiones internas
+ABCDE × k → valid result if:
+- all digits in the result are distinct
+- there are no internal repetitions
 ```
 
-## Objetivo
+## Objective
 
-El objetivo del kata es practicar:
+The goal of this kata is to practice:
 
-- Resolución de problemas con restricciones fuertes
-- Manejo de dígitos numéricos
-- Uso de estructuras de datos como sets
-- Algoritmos de búsqueda y filtrado
-- Pensamiento combinatorio
+- Solving problems with strong constraints
+- Digit manipulation
+- Use of data structures such as sets
+- Search and filtering algorithms
+- Combinatorial thinking
 
-## Autor
+## Author
 
-Ejercicio realizado como parte de las prácticas de Cyber Dojo utilizando Java.
+Exercise completed as part of Cyber Dojo practice sessions using Java.
